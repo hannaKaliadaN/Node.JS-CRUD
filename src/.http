@@ -1,0 +1,20 @@
+### Replace with your server's address
+
+
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{ "name": "TV SET1", 
+    "description": "Description of the first product", 
+  
+    "inStock": false
+}
+
+###
+
+PUT http://localhost:5000/products/6abf708efa96a0fa8395d3b0
+Content-Type: application/json
+
+{
+    "name": "White Bread1"
+}
