@@ -33,7 +33,7 @@ const createProduct = async (req, res, next) => {
 const updateProduct = async (req, res, next) => {
     let product
     try {
-        product = await Product.findByIdAndUpdate(req.params.id, req.body)
+        product = await Product.findByIdAndUpdate(req.params.id, req.body, { runValidators: true })
     } catch (error) {
         return handleValidationError(error, res, next)
     }

@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const productSchema = new mongoose.Schema({
-   
+
     name: {
         type: String,
         required: true,
@@ -21,6 +21,7 @@ const productSchema = new mongoose.Schema({
     category: {
         type: String,
         required: true,
+        enum: ['electronics', 'books', 'clothing'],
     },
     inStock: {
         type: Boolean,

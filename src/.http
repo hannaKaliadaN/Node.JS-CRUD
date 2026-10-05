@@ -4,17 +4,22 @@
 POST http://localhost:5000/products
 Content-Type: application/json
 
-{ "name": "TV SET1", 
-    "description": "Description of the first product", 
-  
-    "inStock": false
+{   "name": "Shorts", 
+    "description": "White woman shorts", 
+    "category": "clothing",
+    "inStock": true,
+    "price": 87
+
 }
 
 ###
 
-PUT http://localhost:5000/products/6abf708efa96a0fa8395d3b0
+PUT http://localhost:5000/products/6ac36f4af7b8ead835ef1cba
 Content-Type: application/json
 
 {
-    "name": "White Bread1"
+    "name": "Fantastic Beasts",
+    "category": "books",
+    "inStock": false,
+    "price": 89
 }
